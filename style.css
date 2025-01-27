@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: justify;
+  color: #666;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="radio"] {
+  margin-right: 0px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.count {
+  background-color: #007bff;
+  color: white;
+}
+
+.reset {
+  background-color: #ccc;
+  color: #333;
+}
+
+.count:hover {
+  background-color: #0056b3;
+}
+
+.reset:hover {
+  background-color: #999;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+}
+
+h3 {
+  color: #333;
+  text-align: center;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+.info {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.result-box {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.result-box h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bmi-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+}
+
+.bmi-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-box,
+.disease-box {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.warning {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+  text-align: justify;
+}
