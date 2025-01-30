@@ -1,22 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Body */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
 }
-
-.container {
-  max-width: 600px;
+header {
   background: #fff;
-  margin: 40px auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main {
+  display: flex;
+  max-width: 1200px;
+  background: #fff;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 20px;
+}
+.left-column {
+  border-right: 1px solid #ccc;
+}
+.right-column {
+  text-align: center;
+}
+footer {
+  background: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+/* CSS Heading */
 h1 {
   text-align: center;
   color: #333;
+}
+h2 {
+  margin-top: 20px;
+  color: #333;
+}
+h3 {
+  color: #333;
+  text-align: center;
 }
 
 p {
@@ -24,31 +63,27 @@ p {
   color: #666;
 }
 
+/* FORM CSS */
 form {
   margin-top: 20px;
 }
-
 .form-group {
   margin-bottom: 15px;
 }
-
 label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
   color: #333;
 }
-
 .radio-group {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-
 input[type="radio"] {
   margin-right: 0px;
 }
-
 input[type="number"] {
   width: 100%;
   padding: 10px;
@@ -58,12 +93,12 @@ input[type="number"] {
   box-sizing: border-box;
 }
 
+/* Button */
 .button-group {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
-
 .btn {
   padding: 10px;
   border: none;
@@ -71,33 +106,21 @@ input[type="number"] {
   border-radius: 5px;
   cursor: pointer;
 }
-
-.count {
+.first {
   background-color: #007bff;
   color: white;
 }
-
-.reset {
+.second {
   background-color: #ccc;
   color: #333;
 }
 
-.count:hover {
+/* Button Hover */
+.first:hover {
   background-color: #0056b3;
 }
-
-.reset:hover {
+.second:hover {
   background-color: #999;
-}
-
-h2 {
-  margin-top: 20px;
-  color: #333;
-}
-
-h3 {
-  color: #333;
-  text-align: center;
 }
 
 ol {
@@ -121,11 +144,7 @@ ol li {
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
-}
-
-.result-box h2 {
-  color: #333;
-  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 .bmi-value {
@@ -142,8 +161,7 @@ ol li {
   text-align: center;
 }
 
-.info-box,
-.disease-box {
+.info-box {
   background-color: #fff;
   padding: 15px;
   border-radius: 8px;
@@ -156,4 +174,28 @@ ol li {
   color: #777;
   margin-top: 10px;
   text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    flex: none;
+    width: 100%;
+    border-right: none;
+    padding: 15px;
+  }
+
+  .result-box {
+    margin-top: 20px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 14px;
+  }
 }
